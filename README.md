@@ -1,4 +1,4 @@
-## About the Project
+
 
 A comprehensive implementation of **_Matrix Decomposition Techniques_**, forming the foundations of various scientific and engineering applications. 
 
@@ -11,6 +11,17 @@ With mathematical intuition & visual introspection, the project makes most of th
 
 > This is the first draft of the project. More implementations—such as **Householder Reflection**, **Bidiagonalization**, **LU Decomposition**, and others—will be added soon.
 
+## Features / What's Inside
+
+For a vector space, building *Orthonormal Basis* is the most essential part of Linear Algebra. 
+
+You can find top discussions about certain topics like Orthogonality, and why do we need it, ....here.
+
+#### Gram-Schmidt Orthogonalization
+
+One of the technique for creating Orthonormal Basis from a vector space (*assuming linear independence*) by using a Vector Projection Elimination method. 
+
+Here's a snippet,
 
 
 ## 🧪 Testing
