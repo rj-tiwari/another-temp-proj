@@ -1,55 +1,11 @@
-# marimo WebAssembly + GitHub Pages Template
+## About the Project
 
-This template repository demonstrates how to export [marimo](https://marimo.io) notebooks to WebAssembly and deploy them to GitHub Pages.
+A comprehensive implementation of matrix decomposition techniques, which form a foundation of scientific and engineering applications. 
 
-## 📚 Included Examples
+The project combines mathematical intuition with visual exploration through Marimo (reactive notebooks), allowing users to gain deeper insights into each implementation.
 
-- `apps/charts.py`: Interactive data visualization with Altair
-- `notebooks/fibonacci.py`: Interactive Fibonacci sequence calculator
-- `notebooks/penguins.py`: Interactive data analysis with Polars and marimo
+> This is the first draft of the project. More implementations—such as **Householder Reflection**, **Bidiagonalization**, **LU Decomposition**, and others—will be added soon.
 
-## 🚀 Usage
-
-1. Fork this repository
-2. Add your marimo files to the `notebooks/` or `apps/` directory
-   1. `notebooks/` notebooks are exported with `--mode edit`
-   2. `apps/` notebooks are exported with `--mode run`
-3. Push to main branch
-4. Go to repository **Settings > Pages** and change the "Source" dropdown to "GitHub Actions"
-5. GitHub Actions will automatically build and deploy to Pages
-
-## Including data or assets
-
-To include data or assets in your notebooks, add them to the `public/` directory.
-
-For example, the `apps/charts.py` notebook loads an image asset from the `public/` directory.
-
-```markdown
-<img src="public/logo.png" width="200" />
-```
-
-And the `notebooks/penguins.py` notebook loads a CSV dataset from the `public/` directory.
-
-```python
-import polars as pl
-df = pl.read_csv(mo.notebook_location() / "public" / "penguins.csv")
-```
-
-## 🎨 Templates
-
-This repository includes several templates for the generated site:
-
-1. `index.html.j2` (default): A template with styling and a footer
-2. `bare.html.j2`: A minimal template with basic styling
-3. `tailwind.html.j2`: A minimal and lean template using Tailwind CSS
-
-To use a specific template, pass the `--template` parameter to the build script:
-
-```bash
-uv run .github/scripts/build.py --template templates/tailwind.html.j2
-```
-
-You can also create your own custom templates. See the [templates/README.md](templates/README.md) for more information.
 
 ## 🧪 Testing
 
